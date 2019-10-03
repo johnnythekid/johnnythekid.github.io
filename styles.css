@@ -1,0 +1,51 @@
+#Overall{
+display:grid;
+grid-template-areas:"head head"
+                     "sidebar mainContent";
+                     grid-gap: 30px;
+}
+#Overall>.mainContent{
+    grid-area: mainContent;
+}
+hr{
+border-top: 2px solid black;
+
+}
+img{
+    border-radius: 50px;
+}
+#Overall>.header{
+color: white;
+background-color: blue;
+border: 2px solid green;
+display:flex;
+justify-content: center;
+  flex-direction: column;
+  text-align:center;
+  grid-area:head;
+}
+hr.Body{
+    border-top: 2px solid grey;
+}
+
+
+#Overall>.sidebar{
+    grid-area:sidebar;
+    background-color: darkgray;
+}
+div.Experience{
+display:flex;
+flex-wrap: wrap;
+flex-direction:row;
+justify-content: space-evenly;
+
+}
+#WK,#Ed{
+text-transform:uppercase;
+}
+p.Education{
+    font-weight:bold;
+}
+
+
+
